@@ -5,7 +5,7 @@ body{
     background-color: black;
     overflow: hidden;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     font-family: 'Anton', sans-serif;
@@ -22,15 +22,23 @@ body{
 #menu{
     min-width: 15vw;
     min-height: 80vh;
-    padding-top: 5px;
-    background-color: white;
+    /* padding-top: 5px; */
+    /* background-color: white; */
     border-radius: 5px;
-    box-shadow: white 1px 0px 5px;
+    /* box-shadow: white 1px 0px 5px; */
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 40px;
+    justify-content: space-around;
+    font-size: 3.5vw;
     gap: 10px;
+}
+
+.submenu {
+    padding: 10px;
+    background-color: white;
+    box-shadow: white 1px 0px 5px;
+    border-radius: 10px;
 }
 
 .box{
@@ -43,6 +51,7 @@ ul{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 20px;
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -50,13 +59,16 @@ ul{
 
 li{
     flex: 1 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
-    min-height: 40px;
+    min-height: 50px;
     cursor: pointer;
-    min-width: 40px;
-    border-radius: 100%;
+    min-width: 50px;
+    border-radius: 10px;
     border: none;
     box-shadow: black 1px 0px 5px;
 }
@@ -84,4 +96,41 @@ button{
 #slider-wrapper {
     display: flex;
     flex-direction: column;
+}
+
+#muestrario {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    
+    box-shadow: black 1px 0px 5px;
+}
+#muestrario::-webkit-color-swatch {
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#muestrario::-moz-color-swatch {
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#clean {
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 30px;
+}
+#clean-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
 }

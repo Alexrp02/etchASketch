@@ -13,19 +13,31 @@
 </head>
 <body>
     <div id="menu">
-        <div>COLORS</div>
-        <ul>
-            <li><button class="button" id="blue"></button></li>
-            <li><button class="button" id="pink"></button></li>
-            <li><button class="button" id="yellow"></button></li>
-            <li><button class="button" id="green"></button></li>
-            <li><button class="button" id="random">?</button></li>
-            <li><input type="color" value="#ff0000" id="muestrario"></li>
-        </ul>
-        <div id="slider-wrapper">
-            <div id="slider-value">20</div>
-            <input type="range" min="8" max="100" id="slider">
+        
+        <div class="submenu">
+            <div>COLORS</div>
+            <ul>
+                <li><button class="button" id="blue"></button></li>
+                <li><button class="button" id="pink"></button></li>
+                <li><button class="button" id="yellow"></button></li>
+                <li><button class="button" id="green"></button></li>
+                <li><button class="button" id="random">?</button></li>
+                <li><input type="color" value="#ff0000" id="muestrario" class="button"></li>
+            </ul>
         </div>
+        
+        <div class="submenu">
+            <div>UTILITIES</div>
+            <div id="slider-wrapper">
+                <div id="slider-value">20</div>
+                <input type="range" min="8" max="100" id="slider">
+            </div>
+            <div id="clean-wrapper">
+                <button id="clean">&#129529;</button>
+                <button id="eraser">ERASER</button>
+            </div>
+        </div>
+        
     </div>
     <div id="wrapper">
         
